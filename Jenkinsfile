@@ -1,4 +1,4 @@
-Pipeline {
+pipeline {
         agent { docker 'maven:3.6.3-jdk-11' }
         stages {
             stage('Checkout') {
