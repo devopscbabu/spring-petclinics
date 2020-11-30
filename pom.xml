@@ -8,6 +8,21 @@
 
     <name>petclinic</name>
     <packaging>war</packaging>
+    
+    <distributionManagement>
+	<repository>
+		<id>deployment</id>
+		<name>Internal Releases</name>
+		<url>http://10.64.167.165:8081/repository/maven-releases/</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>deployment</id>
+		<name>Internal Releases</name>
+		<url>http://10.64.167.165:8081/repository/maven-snapshots/</url>
+	</snapshotRepository>
+
+    </distributionManagement>
 
     <properties>
 
@@ -384,21 +399,6 @@
     </build>
     <reporting>
         <plugins>
-            
-    <distributionManagement>
-	<repository>
-		<id>deployment</id>
-		<name>Internal Releases</name>
-		<url>http://10.64.167.165:8081/repository/maven-releases/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>deployment</id>
-		<name>Internal Releases</name>
-		<url>http://10.64.167.165:8081/repository/maven-snapshots/</url>
-	</snapshotRepository>
-
-    </distributionManagement>
 
             <!--  integrate maven-cobertura-plugin to project site  -->
             <plugin>
