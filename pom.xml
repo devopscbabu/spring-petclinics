@@ -399,7 +399,7 @@
             </plugin>
           
         </plugins>
-    </reporting>
+  
     <profiles>
 		<profile>
 			<id>bower-install</id>
