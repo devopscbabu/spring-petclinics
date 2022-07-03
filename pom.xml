@@ -30,6 +30,11 @@
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
+        
+       
+        <sonar.organization>cbabu85</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
 
 
         <!-- Generic properties -->
@@ -392,50 +397,7 @@
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
-            <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <configuration>
-            <formats>
-            <format>xml</format>
-            <!-- format>xml</format -->
-            </formats>
-            </configuration>
-            </plugin>
-            
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>${cobertura.version}</version>
-                <configuration>
-                    <check/>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>clean</goal>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-    <reporting>
-        <plugins>
-
-            <!--  integrate maven-cobertura-plugin to project site  -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>${cobertura.version}</version>
-                <configuration>
-                    <formats>
-                        <format>html</format>
-                    </formats>
-                    <check/>
-                </configuration>
-            </plugin>
+          
         </plugins>
     </reporting>
     <profiles>
