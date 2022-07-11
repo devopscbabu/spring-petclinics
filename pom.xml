@@ -60,8 +60,6 @@
         <dandelion.version>1.1.1</dandelion.version>
         <dandelion.datatables.version>1.1.0</dandelion.datatables.version>
 
-        <cobertura.version>2.7</cobertura.version>
-
     </properties>
 
     <dependencyManagement>
@@ -392,33 +390,9 @@
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
-            <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <configuration>
-            <formats>
-            <format>xml</format>
-            <!-- format>xml</format -->
-            </formats>
-            </configuration>
-            </plugin>
             
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>${cobertura.version}</version>
-                <configuration>
-                    <check/>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>clean</goal>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            
+            
         </plugins>
     </build>
     <reporting>
