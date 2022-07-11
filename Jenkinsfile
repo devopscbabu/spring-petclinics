@@ -7,7 +7,7 @@ pipeline {
    stages {
 	stage('Checkout') {
         steps {
-		git 'https://github.com/devopscbabu/maven-sample.git'
+		git 'https://github.com/devopscbabu/spring-petclinics.git'
                }
             }
       stage('Build my job') {
